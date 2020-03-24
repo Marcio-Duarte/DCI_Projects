@@ -78,7 +78,6 @@ function getInputValues() {
 }
 
 function cleanAllInputs() {
-
     $('body input').each(function (e) {
         $(this).val('');
     });
@@ -87,8 +86,5 @@ function cleanAllInputs() {
 /* Function to test empty inputs */
 function isEmpty(value) {
     let pattern = /[^\s]/;
-    if (pattern.test(value)) {
-        return false;
-    }
-    return true;
+    return !pattern.test(value);
 }
