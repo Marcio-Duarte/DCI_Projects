@@ -4,14 +4,14 @@
 
 
 $('#addTask').click(function () {
-   if (isEmpty($($(this)).parent().siblings('input').val())) {
+   if (isEmpty($(this).parent().siblings('input').val())) {
       alert("Insert a name for the task");
    } else {
       $('#toDo-list').children('ul')
-         .append(`<li>${$($(this)).parent().siblings('input').val()}</li>`)
+         .append(`<li>${$(this).parent().siblings('input').val()}</li>`)
          .addClass('bg-info');
    }
-   $($(this)).parent().siblings('input').val('');
+   $(this).parent().siblings('input').val('');
 
    /* $('#toDo-list').children('ul').append(`<li>${$($(this)).parent().siblings('input').val()}</li>`).addClass('bg-info'); */
 });
