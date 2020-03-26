@@ -1,11 +1,8 @@
 /* function createChart(countriesList, populationList) { */
 var ctx = document.getElementById('chart').getContext('2d');
-
-
 var chart = new Chart(ctx, {
     // The type of chart we want to create
     type: 'bar', /* Chart types: pie, bar, line, radar, horizontalBar, polarArea, doughnut */
-
     // The data for our dataset
     data: {
         /* labels: countriesList, */

@@ -2,7 +2,6 @@ async function Fetch(country) {
     let URL = `https://restcountries.eu/rest/v2/name/${country}?fullText=true`;
     const response = await fetch(URL);
     const data = await response.json();
-
     /* Passing values from object to variables automatic */
     const {
         name,

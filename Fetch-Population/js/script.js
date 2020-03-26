@@ -1,4 +1,3 @@
-
 /* To create automatically checkboxes with all countries in the API */
 (async function () {
     let countries = await fetchAllCountryNames();
@@ -80,4 +79,3 @@ async function updateChart(list) {
     }
     displayLoading.toggleClass("d-none");
 }
-
