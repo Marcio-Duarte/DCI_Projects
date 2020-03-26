@@ -12,6 +12,4 @@ $('#addTask').click(function () {
          .addClass('bg-info');
    }
    $(this).parent().siblings('input').val('');
-
-   /* $('#toDo-list').children('ul').append(`<li>${$($(this)).parent().siblings('input').val()}</li>`).addClass('bg-info'); */
 });

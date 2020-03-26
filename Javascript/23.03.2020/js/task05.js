@@ -4,11 +4,17 @@
    - Add a button and when you click the button show your random value inside the new array (because of map)
    - Write your normal array above the button inside the page */
 
-let array = [];
-for (let i = 1; i < 10; i++) {
-    array.push(Math.trunc(Math.random() * 100));
-}
-console.log(array);
-array.map(function (value) {
-    console.log(value * 2);
+
+$('#start-task5').click(function () {
+    let array = [];
+    for (let i = 1; i < 7; i++) {
+        array.push(Math.trunc(Math.random() * 100));
+    }
+    array.push("\nThe double of the array is:\n");
+    array.map(function (value) {
+        array.push(value * 2);
+    });
+    array.unshift("The random numbers of the array:\n");
+    array.pop();
+    alert(array.join('   '));
 });
