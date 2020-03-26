@@ -1,0 +1,41 @@
+.container-fluid {
+  height: 99vh;
+}
+
+#div-side {
+  box-shadow: 2px 5px 10px 10px rgba(0, 0, 0, 0.2);
+  height: 98vh;
+  min-width: 225px;
+}
+
+.dropdown-menu-bg {
+  border: 1px solid rgb(212, 211, 211);
+  border-radius: 3px;
+  font-size: 1.1em;
+}
+.form-check-input {
+  margin-top: 4px;
+}
+
+.dropdown-menu {
+  padding: 0;
+  margin-left: 1px;
+  /* width: 175px; */
+}
+.form-check-input {
+  cursor: pointer;
+}
+
+/* Loading message definitons */
+#loadingInfo {
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  width: 100%;
+}
+/* spinner definitions */
+#loadingSpinner {
+  margin-left: 8%;
+  width: 100px;
+  height: 100px;
+}
