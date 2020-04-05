@@ -81,25 +81,26 @@ textarea {
     -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
   border-radius: 10px;
 }
-.edit-flashcard {
-  border: 0.2rem solid var(--mainGreen);
+
+.edit-btn {
   color: var(--mainGreen);
-  background: transparent;
+  border: 0.2rem solid var(--mainGreen);
 }
-.edit-flashcard:hover {
+
+.edit-btn:hover {
   color: var(--mainDark);
   background-color: var(--mainGreen);
 }
-.delete-flashcard {
-  border: 0.2rem solid var(--mainOrange);
+
+.delete-btn {
   color: var(--mainOrange);
-  background: transparent;
+  border: 0.2rem solid var(--mainOrange);
 }
-.delete-flashcard:hover {
-  background: var(--mainOrange);
+.delete-btn:hover {
   color: var(--mainDark);
+  background: var(--mainOrange);
 }
-.answer {
+.hideItem {
   display: none;
 }
 .showItem {
