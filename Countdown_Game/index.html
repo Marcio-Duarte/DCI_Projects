@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="nav">
+        <h1 class="title">Countdown Game <span>Márcio</span></h1>
+    </div>
+
+    <hr>
+    <!-- PART 1: COUNTDOWN TIMER -->
+
+    <div class="timer"><span id="timer-span">Time left =<span id="timer"></span></span>
+        <button id="start-btn">Start</button>
+    </div>
+    <!-- PART 2: MATH ADDITION -->
+    <div id="canvas">
+        <div class="column">
+
+            <div class="row">
+                <h2 class="titleH">Guess Math Addition: <span id="math-result" style="color: green;"></span></h2>
+
+            </div>
+
+            <div class="row">
+                <div id="primary-number"></div>
+                <div id="add"> +</div>
+                <div id="secondary-number"></div>
+                <div id="equal">=</div>
+                <div>
+                    <input type="number" id="guess">
+                </div>
+                <div>
+                    <button id="btn">CHECK</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- PART 3: CHANGE COLOR -->
+    <div>
+        <button id="buttonColor">Click me to Change BG Color!</button>
+    </div>
+
+    <!-- PART 4: HANGMAN -->
+    <div id="canvas" class="">
+        <div class="column">
+
+            <div class="row">
+                <h2 class="titleH">Guess the Word:</h2>
+            </div>
+
+            <div class="row box">
+                <p id="right" class="t1"></p>
+            </div>
+
+            <div class="row">
+                <p class="t2">
+                    <span id="remain" class="t1"></span> Guesses Remain!
+                </p>
+            </div>
+
+            <div class="row">
+                <p id="wrong" class="t3"></p>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- ADD JS -->
+    <script src="app.js"></script>
+
+</body>
+
+</html>
