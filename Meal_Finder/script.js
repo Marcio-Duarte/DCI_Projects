@@ -53,26 +53,26 @@ async function fetchRndMeal() {
     createSingleMeal(data.meals[0])
 }
 
-function createSingleMeal(data) {
+/* Function to create the HTML element related to one dish */
+function createSingleMeal(dish) {
     // Here I collect all the ingredients that are not empty or null in the Object and return them as <li>.
-
-    let ingredients = Object.keys(data)
+    let ingredients = Object.keys(dish)
         .filter(ingredient => ingredient.includes('strIngredient')
-            && (data[ingredient] != "") && data[ingredient] != null)
+            && (dish[ingredient] != "") && dish[ingredient] != null)
         .map(ingredient => {
-            return (`<li>${data[ingredient]}</li>`)
+            return (`<li>${dish[ingredient]}</li>`)
         }).join('');
-    console.log(ingredients);
+
     document.getElementById('single-meal').innerHTML = (
         `<div class="single-meal">
-            <h1>${data.strMeal}</h1>
-            <img src="${data.strMealThumb}" alt="Sorry... Image not available..."/>
+            <h1>${dish.strMeal}</h1>
+            <img src="${dish.strMealThumb}" alt="Sorry... Image not available..."/>
             <div class="single-meal-info">
-                ${data.strCategory ? `<p>${data.strCategory}</p>` : ''}
-                ${data.strArea ? `<p>${data.strArea}</p>` : ''}
+                ${dish.strCategory ? `<p>${dish.strCategory}</p>` : ''}
+                ${dish.strArea ? `<p>${dish.strArea}</p>` : ''}
              </div>
             <div class="main">
-                <p>${data.strInstructions}</p>
+                <p>${dish.strInstructions}</p>
                 <h2>Ingredients</h2>
                 <ul>${ingredients} </ul>
             </div >
