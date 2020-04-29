@@ -1,12 +1,12 @@
 ## This folder contains some projects that I developed during my course at the DCI institute.
 
-- Programming languages
+- ### Programming languages
 
   - HTML
   - CSS
   - Javascript
 
-- Libraries
+- ### Libraries
   - Jquery
   - Bootstrap
   - Chart.js
