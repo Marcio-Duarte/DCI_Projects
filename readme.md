@@ -7,6 +7,7 @@
   - Javascript
 
 - ### Libraries
+
   - Jquery
   - Bootstrap
   - Chart.js
