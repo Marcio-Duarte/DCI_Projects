@@ -1,10 +1,12 @@
-# This folder contains some projects that I developed during my course at the DCI institute.
+## This folder contains some projects that I developed during my course at the DCI institute.
 
-# The programming languages and libraries used in these projects:
+- Programming languages
 
-- HTML
-- CSS
-- Javascript
-- Jquery
-- Bootstrap
-- Chart.js
+  - HTML
+  - CSS
+  - Javascript
+
+- Libraries
+  - Jquery
+  - Bootstrap
+  - Chart.js
