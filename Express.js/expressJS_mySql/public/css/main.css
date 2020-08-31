@@ -1,0 +1,31 @@
+.nav {
+  background-color: rgb(231, 231, 231);
+  height: 60px;
+}
+
+.nav a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.nav a.active {
+  background-color: cornflowerblue;
+  color: aliceblue;
+}
+
+.login-form {
+  margin: 100px 200px 0 200px;
+  padding: 20px;
+  background-color: rgb(151, 169, 202);
+  border-radius: 15px;
+}
+
+.register-form {
+  margin: 100px 200px 0 200px;
+  padding: 20px;
+  background-color: rgb(151, 169, 202);
+  border-radius: 15px;
+}
