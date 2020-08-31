@@ -1,0 +1,8 @@
+export const actionType = {
+    FETCH_MOVIES_REQUEST: 'FETCH_MOVIES_REQUEST'
+}
+
+export const fetchingStatus = {
+    FETCH_MOVIES_SUCCESS: 'FETCH_MOVIES_SUCCESS',
+    FETCH_MOVIES_ERROR: 'FETCH_MOVIES_ERROR',
+}
