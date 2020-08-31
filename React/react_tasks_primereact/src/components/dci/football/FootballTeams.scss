@@ -1,0 +1,35 @@
+#dci-football-project {
+  display: flex;
+  flex-direction: column;
+  margin-top: 65px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  .btn-shuffle {
+    align-self: center;
+    width: 150px;
+  }
+
+  div.p-grid {
+    text-align: center;
+    margin-top: 2px;
+
+    .modal-card {
+      text-transform: capitalize;
+      .p-dialog {
+        min-width: 355px;
+      }
+      .p-dialog {
+        th:last-child {
+          span {
+            font-weight: bold;
+          }
+        }
+        td:last-child {
+          font-size: 1.2em;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

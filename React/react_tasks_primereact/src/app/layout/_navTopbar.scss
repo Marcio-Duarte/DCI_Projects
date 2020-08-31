@@ -1,0 +1,14 @@
+#app-nav-topbar {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  z-index: 1;
+  background-color: $topbarBgColor;
+
+  button {
+    box-shadow: none;
+    background-color: $topbarBgColor;
+  }
+}

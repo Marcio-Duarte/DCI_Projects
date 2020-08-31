@@ -1,0 +1,54 @@
+#dci-user-list {
+  justify-content: space-evenly;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.32);
+  min-height: 60vh;
+  .p-panel {
+    margin-top: 30px;
+    box-shadow: 0 0 11px rgba(0, 0, 0, 0.32);
+    max-height: 100%;
+  }
+
+  .p-panel-titlebar {
+    background-color: #0e8906;
+    border: none;
+  }
+
+  .p-panel-content {
+    background-color: #fff;
+  }
+
+  .p-fieldset {
+    border-radius: 10px;
+    button {
+      margin-top: 10px;
+      background-color: #0e8906;
+      border: none;
+    }
+    .p-float-label {
+      margin-top: 25px;
+      label {
+        color: #525050;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .p-fieldset-legend {
+    font-size: x-large;
+    font-weight: bold;
+    span {
+      padding: 5px 15px 5px 15px;
+      background-color: #fff;
+      box-shadow: inset 0 0 0px 1px #0e8906;
+      border-radius: 40px;
+    }
+  }
+
+  #input-username {
+    width: 100%;
+  }
+  #input-job {
+    width: 100%;
+    margin-top: 18px;
+  }
+}

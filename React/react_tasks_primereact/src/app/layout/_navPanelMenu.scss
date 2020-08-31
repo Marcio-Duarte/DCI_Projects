@@ -1,0 +1,70 @@
+#app-nav-panelmenu {
+  @mixin menuFocus() {
+    background-color: $borderBlue;
+    color: white;
+    box-shadow: none;
+    .p-panelmenu-icon {
+      color: white;
+    }
+  }
+
+  .p-panelmenu {
+    .activeItem {
+      .p-panelmenu-header span {
+        color: $topbarBgColor;
+      }
+    }
+
+    .p-panelmenu-panel:not(.activeItem) {
+      .p-panelmenu-header:not(.p-highlight) > a:hover {
+        @include menuFocus;
+      }
+    }
+
+    .p-panelmenu-panel:not(.activeItem) {
+      .p-panelmenu-header.p-highlight > a {
+        margin: 0;
+        box-shadow: inset 0 0 0 1px $topbarBgColor;
+      }
+    }
+
+    .p-panelmenu-header {
+      margin-top: 0;
+      a {
+        box-shadow: none;
+        border: none;
+        border-radius: 0;
+        color: $lightBlack;
+        background-color: white;
+
+        .p-panelmenu-icon {
+          color: $lightBlack;
+          float: right;
+        }
+      }
+    }
+
+    .p-menuitem-link:focus {
+      box-shadow: none;
+    }
+
+    .p-menuitem-link {
+      text-indent: 0.5em;
+    }
+
+    .p-menuitem.activeItem {
+      .p-menuitem-link {
+        color: $topbarBgColor;
+      }
+      .p-menuitem-link:hover {
+        span {
+          color: $topbarBgColor;
+        }
+      }
+    }
+    .p-panelmenu-content {
+      border: none;
+      margin-bottom: 0;
+    }
+  }
+}

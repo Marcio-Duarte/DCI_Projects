@@ -1,0 +1,67 @@
+{
+  "data": [
+    {
+      "team": "Paris Saint-German",
+      "image": "https://img.uefa.com/imgml/TP/teams/logos/140X140/52747.png",
+      "statistics": [
+        { "played": 6, "won": 5, "drawn": 1, "lost": 0, "points": 16 }
+      ]
+    },
+    {
+      "team": "Real Madrid CF",
+      "image": "https://img.uefa.com/imgml/TP/teams/logos/140X140/50051.png",
+      "statistics": [
+        { "played": 6, "won": 2, "drawn": 3, "lost": 1, "points": 9 }
+      ]
+    },
+    {
+      "team": "Club Brugge",
+      "image": "https://img.uefa.com/imgml/TP/teams/logos/140X140/50043.png",
+      "statistics": [
+        { "played": 6, "won": 0, "drawn": 4, "lost": 3, "points": 4 }
+      ]
+    },
+    {
+      "team": "Galatasaray",
+      "image": "https://img.uefa.com/imgml/TP/teams/logos/140X140/50067.png",
+      "statistics": [
+        { "played": 6, "won": 0, "drawn": 2, "lost": 4, "points": 2 }
+      ]
+    },
+    {
+      "team": "FC Bayern München",
+      "image": "https://img.uefa.com/imgml/TP/teams/logos/140X140/50037.png",
+      "statistics": [
+        { "played": 6, "won": 6, "drawn": 0, "lost": 0, "points": 18 }
+      ]
+    },
+    {
+      "team": "Tottenham Hotspur",
+      "image": "https://img.uefa.com/imgml/TP/teams/logos/140X140/1652.png",
+      "statistics": [
+        { "played": 6, "won": 3, "drawn": 1, "lost": 2, "points": 10 }
+      ]
+    },
+    {
+      "team": "FK Crvena zvezda",
+      "image": "https://img.uefa.com/imgml/TP/teams/logos/140X140/50069.png",
+      "statistics": [
+        { "played": 6, "won": 1, "drawn": 1, "lost": 4, "points": 4 }
+      ]
+    },
+    {
+      "team": "Olympiacos FC",
+      "image": "https://img.uefa.com/imgml/TP/teams/logos/140X140/2610.png",
+      "statistics": [
+        { "played": 6, "won": 0, "drawn": 2, "lost": 4, "points": 2 }
+      ]
+    },
+    {
+      "team": "",
+      "image": "",
+      "statistics": [
+        { "played": 6, "won": 0, "drawn": 2, "lost": 4, "points": 2 }
+      ]
+    }
+  ]
+}
