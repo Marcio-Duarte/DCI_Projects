@@ -1,0 +1,28 @@
+{
+  "posts": [
+    {
+      "id": 1592037755834,
+      "username": "Marcio",
+      "title": "React Router",
+      "content": "This is my router article"
+    },
+    {
+      "id": 1592492207210,
+      "username": "Marcio Duarte",
+      "title": "Responsive",
+      "content": "I like to create responsive web apps"
+    },
+    {
+      "id": 1592663723357,
+      "username": "Márcio Jorge Duarte",
+      "title": "React Router",
+      "content": "This app is using React Router Dom and it works pretty well."
+    },
+    {
+      "id": 1592664589440,
+      "username": "Bob Marley",
+      "title": "Context API",
+      "content": "This project is using context api"
+    }
+  ]
+}
