@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacts</title>
+  <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body>
+  <%- include('../partials/top_navbar.ejs') %>
+
+  <main class="container-fluid">
+    <div id="left-container">
+      <form class="contact-form col-md-10">
+        <div class="input-group mb-2">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Name</span>
+          </div>
+          <input class="form-control" name="name" type="text" aria-label="name">
+        </div>
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">@</span>
+          </div>
+          <input class="form-control" name="email" type="email" placeholder="Email" aria-label="Email"
+            aria-describedby="basic-addon1">
+        </div>
+        <button type="submit" id="btn-submitContact" class="btn btn-primary">Add</button>
+      </form>
+    </div>
+
+
+    <div id="right-container">
+      <div class="contact-table col-md-10">
+        <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">N°</th>
+              <th scope="col">Name</th>
+              <th scope="col">Email</th>
+              <th class="table-actions" scope="col">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <% contacts.forEach((contact, i) => { %>
+            <tr id=<%= contact.id %>>
+              <td><%= i+1 %></td>
+              <td><%= contact.name %></td>
+              <td><%= contact.email %></td>
+              <td class="table-actions">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                  <button type="button" class="send-email btn btn-outline-primary">Send Email</button>
+                  <button type="button" class="edit-contact btn btn-outline-secondary">Edit</button>
+                  <button type="button" class="delete-contact btn btn-outline-danger">Delete</button>
+                </div>
+              </td>
+              <%  }); %>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Edition modal -->
+    <div class="modal fade" id="modal-edit-contact" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-contact-title">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form class="contact-form col-md-10">
+              <div class="input-group mb-4">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Name</span>
+                </div>
+                <input class="form-control" name="name" type="text" aria-label="name">
+              </div>
+
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon2">@</span>
+                </div>
+                <input class="form-control" name="email" type="email" placeholder="Email" aria-label="Email"
+                  aria-describedby="basic-addon1">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="save-edit-contact btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Email client -->
+    <div class="modal fade" id="modal-email-client" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-contact-title"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form class="send-email-form col-md-10">
+              <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Subject</span>
+                </div>
+                <input class="form-control" name="subject" type="text">
+              </div>
+              <div class="input-group">
+                <textarea class="form-control textarea" name="message" aria-label="With textarea" rows="5"></textarea>
+              </div>
+
+
+              <div class="input-group mb-3 mt-2">
+                <div class="custom-file">
+                  <input type="file" class="custom-file-input visually-hidde" id="email_attach_file" title="" multiple
+                    aria-multiselectable="true">
+                  <label class="custom-file-label" for="inputGroupFile01">Attach File</label>
+                </div>
+              </div>
+
+
+
+              <!-- <div class="">
+                <label for="exampleFormControlFile1">Attach File</label>
+                <input type="file" class="form-control-file" id="email_attach_file" multiple>
+              </div> -->
+
+              <!-- <div class="input-group mb-3 mt-2">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroupFileAddon01">Attach File</span>
+                </div>
+                <div class="custom-file">
+                  <input type="file" class="custom-file-input visually-hidde" id="email_attach_file" multiple
+                    aria-multiselectable="true">
+                  <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                </div>
+              </div> -->
+              <ul id="email-attachments" class="list-group">
+                <!-- <li class="list-group-item">Cras justo odio</li>
+                <li class="list-group-item">Dapibus ac facilisis in</li>
+                <li class="list-group-item">Morbi leo risus</li> -->
+              </ul>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="send-email-to btn btn-success">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <script src="/assets/jquery/jquery.min.js"></script>
+  <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="/assets/js/api_calls.js"></script>
+  <script src="/assets/js/main.js"></script>
+</body>
+
+</html>
