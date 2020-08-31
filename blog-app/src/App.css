@@ -1,0 +1,10 @@
+/* #### Navbar #### */
+/* .MuiButtonBase-root:not(.Mui-selected) {
+  color: #cfd8dc;
+} */
+.MuiTab-wrapper {
+  font-weight: bold;
+}
+/* .MuiTabs-flexContainer {
+  height: 100%;
+} */
